@@ -1,0 +1,48 @@
+h1 {
+	font-family: arial, sans-serif;
+}
+
+h2 {
+	color: #BE4249;
+}
+
+#table2 {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+th, td{
+	border: 2px solid;
+	border-color: #CCCCCC;
+	text-align: left;
+	padding: 8px;
+}
+
+th {
+	background-color: #DDDDDD;
+}
+
+#td1 {
+	border-color: #E7ECF0;
+}
+
+
+td {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+
+#table1 {
+	background-color: #E9EEF1;
+	width: 75%;
+	border: 0px solid;
+	spacing: 8px;
+}
+
+#weightedbutton, #meanbutton {
+	background-color: #BE4249;
+	color: white;
+	margin: 4px 2px;
+	padding: 10px;
+}

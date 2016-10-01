@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="calculator.css" type="text/css" />
+		<script type="text/javascript" src="calculator.js"> </script>
+	</head>
+	<body>
+		<br>
+		<h1> Grade Calculator </h1>
+		<br>
+		<table id="table1">
+			<tr>
+				<td id="td1">
+					<h2> Activities </h2>
+					<br>
+					Give grades to the numeric activities: 
+					<br>
+					<br>
+					<br>
+					<table id="table2" width="99%">
+						<tr>
+							<th> Name </th>
+							<th> Short Name </th>
+							<th> Weight </th>
+							<th> Grade </th>
+							<th> Percent </th>
+						</tr>
+						<tr>
+							<td> Activity </td>
+							<td> A1 </td>
+							<td> <input type="text" name="a11" id="a11" size="8" height="8px"> </td>
+							<td>
+								<input type="text" name="a12" id="a12" size="8" onkeyup="calculatePercent(1)"> /
+								<br><input type="text" name="a13" id="a13" size="8" onkeyup="calculatePercent(1)">
+							</td>
+							<td> <p id="percent1"> X</p></td>
+						</tr>
+						<tr>
+							<td> Activity </td>
+							<td> A2 </td>
+							<td> <input type="text" name="a21" id="a21" size="8"></td>
+							<td>
+								<input type="text" name="a22" id="a22" size="8" onkeyup="calculatePercent(2)"> /
+								<br><input type="text" name="a23" id="a23" size="8" onkeyup="calculatePercent(2)">
+							</td>
+							<td> <p id="percent2"> X</td>
+						</tr>
+						<tr>
+							<td> Activity </td>
+							<td> A3 </td>
+							<td> <input type="text" name="a31" id="a31" size="8"> </td>
+							<td>
+								<input type="text" name="a32" id="a32" size="8" onkeyup="calculatePercent(3)"> /
+								<br><input type="text" name="a33" id="a33" size="8" onkeyup="calculatePercent(3)">
+							</td>
+							<td> <p id="percent3"> X</td>
+						</tr>
+						<tr>
+							<td> Activity </td>
+							<td> A4 </td>
+							<td> <input type="text" name="a41" id="a41" size="8"> </td>
+							<td>
+								<input type="text" name="a42" id="a42" size="8" onkeyup="calculatePercent(4)"> /
+								<br><input type="text" name="a43" id="a43" size="8" onkeyup="calculatePercent(4)">
+							</td>
+							<td> <p id="percent4"> X</td>
+						</tr>
+							
+							
+					</table>
+					<h2 id="result"> Result </h2>
+					<p id="mean"> </p>
+					<p id ="weighted"> </p>
+					<p align="right">
+						<input type="submit" value="WEIGHTED" id="weightedbutton" onclick="calculateWeighted()"></input>
+						<input type="submit" value="MEAN" id="meanbutton" onclick="calculateMean()"></input>
+					</p>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
